@@ -1,0 +1,113 @@
+       vi {
+            display: inline-block;
+            vertical-align: middle;
+            /* Additional styles can be added here */
+        }
+
+     /* Example CSS rule to apply red hue filter */
+vi.color-shift {
+    animation: color-shift 1s ease-in-out infinite alternate;
+}
+
+@keyframes color-shift {
+    from {
+        filter: hue-rotate(60deg) saturate(100%) brightness(100%) contrast(100%);
+    }
+    to {
+        filter: hue-rotate(60deg) saturate(100%) brightness(100%) contrast(100%);
+    }
+}
+
+/* Additional CSS rules for other colors */
+vi.blue {
+    filter: hue-rotate(240deg) saturate(100%) brightness(100%) contrast(100%);
+}
+
+vi.green {
+    filter: hue-rotate(120deg) saturate(100%) brightness(100%) contrast(100%);
+}
+
+        /* Example CSS rule to change size */
+        vi.large {
+            font-size: 30px;
+        }
+		
+vi.fade-in {
+    opacity: 0;
+    animation: fade-in 1s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+vi.slide-in-left {
+    transform: translateX(-100%);
+    animation: slide-in-left 1s ease-in-out forwards;
+}
+
+@keyframes slide-in-left {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+vi.rotate {
+    animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+vi.pulse {
+    animation: pulse 1s ease-in-out infinite alternate;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
+vi.bounce {
+    animation: bounce 1s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+vi.color-change {
+    animation: color-change 1s ease-in-out infinite alternate;
+}
+
+@keyframes color-change {
+    from {
+        filter: hue-rotate(0deg) saturate(100%) brightness(100%) contrast(100%);
+    }
+    to {
+        filter: hue-rotate(120deg) saturate(100%) brightness(100%) contrast(100%);
+    }
+}
